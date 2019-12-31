@@ -5,24 +5,23 @@
 }
 
 .item-store.-title {
+  margin: 138px 0 99px;
   font-size: 25px;
-  margin: 140px 0 100px;
 }
 
-.item-store.-rating {
-  padding-left: 10px;
+.item-store.-avaliation {
+  margin-left: 15px;
 }
+
 .item-store.-price {
   margin-top: 30px;
+  word-spacing: 82px;
 }
 
 .item-store.-description {
+  margin: 75px 0 30px;
   font-size: 18px;
   line-height: 30px;
-  margin: 75px 0 30px;
-  text-align: left;
-  width: 553px;
-  height: 175px;
 }
 
 .item-store.-link {
@@ -30,5 +29,5 @@
 }
 
 .item-store.-button {
-  margin-top: 98px;
+  margin-top: 100px;
 }
