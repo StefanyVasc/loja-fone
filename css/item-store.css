@@ -1,11 +1,25 @@
 .item-store {
   font-family: "Roboto", Arial, sans-serif;
   color: #fff;
+  width: 550px;
   font-size: 20px;
+  float: right;
+}
+.item-img {
+  background-color: #fff;
+  width: 600px;
+  height: 575px;
+  padding: 27px 0 0 105px;
+  position: absolute;
+  float: right;
+  top: 222px;
+  left: 0;
+  border-radius: 0 150px 150px 0;
+  box-sizing: border-box;
 }
 
 .item-store.-title {
-  margin: 138px 0 99px;
+  margin: 144px 0 99px;
   font-size: 25px;
 }
 
@@ -25,9 +39,13 @@
 }
 
 .item-store.-link {
+  margin-top: 30px;
   text-decoration: none;
 }
 
 .item-store.-button {
+  display: inline-block;
   margin-top: 100px;
+  float: none;
+  width: auto;
 }
