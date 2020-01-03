@@ -1,60 +1,61 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Loja de fone</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/container-store.css" />
+    <link rel="stylesheet" href="css/header-store.css" />
+    <link rel="stylesheet" href="css/img-product.css" />
+    <link rel="stylesheet" href="css/wrap-product.css" />
+    <link rel="stylesheet" href="css/description-product.css" />
+    <link rel="stylesheet" href="css/button-store.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Loja de fone</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/container-store.css" />
-  <link rel="stylesheet" href="css/header-store.css" />
-  <link rel="stylesheet" href="css/item-store.css" />
-  <link rel="stylesheet" href="css/button-store.css" />
-</head>
+  <body>
+    <div class="container-store">
+      <header class="header-store">
+        <h1 class="title">Logo</h1>
+        <nav class="navigation">
+          <a class="action" href="link_aqui">Produtos</a>
+          <a class="action " href="link_aqui">Serviços</a>
+          <a class="action -last" href="link_aqui">Carrinho (10)</a>
+        </nav>
+      </header>
 
-<body>
-  <div class="container-store">
-    <header class="header-store">
-      <h1 class="title">LOGO</h1>
-      <nav class="navigation">
-        <a class="action" href="link_aqui">Produtos</a>
-        <a class="action " href="link_aqui">Serviços</a>
-        <a class="action -last" href="link_aqui">Carrinho (10)</a>
-      </nav>
-    </header>
+      <figure class="img-product">
+        <img src="/img/fone.png" alt="fone de ouvido" />
+      </figure>
 
-    <dl class="item-store">
-      <dt class="item-img">
-        <figure>
-          <img src="/img/f141ef42f115832103688d3f21a84e63.png" alt="fone top, feliz e caro" />
-        </figure>
-      </dt>
-      <dt class="item-store -title">Fone top, feliz e caro</dt>
-      <dd class="item-store -avaliation">4.0 (97)</dd>
-      <dd class="item-store -price">
-        <p class="ticket">FRETE C$108</p>
-      </dd>
-      <dd class="item-store -price">
-        <p class="ticket">PREÇO C$340</p>
-      </dd>
-      <dd class="item-store -description">
-        Fone TOP com um cor feliz que não tem fio. A cor também é algo que
-        impressiona junto com o seu layout modernão! Ele é caro? É! Mas compre
-        que você não vai se arrepender e se você se arrepender pode vender no
-        mercado livre..
-      </dd>
-      <dd><a class="item-store -link" href="#">Saber mais...</a></dd>
+      <section class="wrap-product">
+        <dl class="description-product">
+          <dt class="title">Fone top, feliz e caro</dt>
+          <dd class="item">4.0 (97)</dd>
+          <dd class="item -info">
+            <p><strong class="contrast">Frete</strong> C$ 108</p>
+          </dd>
+          <dd class="item -info -last">
+            <p><strong class="contrast">Preço </strong> C$ 340</p>
+          </dd>
+          <dd class="text">
+            Fone TOP com um cor feliz que não tem fio. A cor também é algo que
+            impressiona junto com o seu layout modernão! Ele é caro? É! Mas
+            compre que você não vai se arrepender e se você se arrepender pode
+            vender no mercado livre..
+          </dd>
+          <dd class="text">
+            <a href="#" class="action">Saber mais...</a>
+          </dd>
+        </dl>
+      </section>
+      <button class="button-store -second">Adiciona no carrinho</button>
 
-      <dd class="item-store -button">
-        <button class="button-store -second">
-          Adicionar no carrinho
-        </button>
-      </dd>
-      <dd class="item-store -button">
-        <a class="button-store" href="comprar.html"> Comprar </a>
-      </dd>
-    </dl>
-  </div>
-</body>
-
+      <a class="button-store -last" href="comprar.html"> Comprar </a>
+    </div>
+  </body>
 </html>
