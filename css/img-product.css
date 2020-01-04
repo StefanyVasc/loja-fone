@@ -6,12 +6,3 @@
   border-radius: 0 150px 150px 0;
   margin-right: 157px;
 }
-
-.star-rating {
-  margin-top: 50px;
-  margin-bottom: 25px;
-}
-
-.star-rating > .star {
-  margin-right: 9px;
-}
