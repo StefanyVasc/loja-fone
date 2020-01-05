@@ -31,10 +31,3 @@
   color: inherit;
   text-decoration: inherit;
 }
-
-.button-container {
-  display: flex;
-  float: right;
-  margin-right: 265px;
-  margin-top: 50px;
-}

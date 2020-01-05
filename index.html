@@ -21,8 +21,8 @@
     <div class="container-store">
       <header class="header-store">
         <h1 class="title">Logo</h1>
-        <input class="search" type="text" placeholder="Busca" />
         <nav class="navigation">
+          <input class="search" type="search" placeholder="Buscar" />
           <a class="action" href="link_aqui">Produtos</a>
           <a class="action " href="link_aqui">Serviços</a>
           <a class="action -last" href="link_aqui">Carrinho (10)</a>
@@ -37,13 +37,13 @@
         <dl class="description-product">
           <dt class="title">Fone top, feliz e caro</dt>
 
-          <figure class="star-rating">
-            <img class="star" src="/img/star.png" alt="estrela completa" />
-            <img class="star" src="/img/star.png" alt="estrela completa" />
-            <img class="star" src="/img/star.png" alt="estrela completa" />
-            <img class="star" src="/img/star.png" alt="estrela completa" />
-            <img class="star" src="/img/star_blank.png" alt="estrela vazia" />
-          </figure>
+          <dd class="item -star">
+            <img src="/img/star.png" alt="estrela vazia" />
+            <img src="/img/star.png" alt="estrela vazia" />
+            <img src="/img/star.png" alt="estrela vazia" />
+            <img src="/img/star.png" alt="estrela vazia" />
+            <img src="/img/star_blank.png" alt="estrela vazia" />
+          </dd>
 
           <dd class="item">4.0 (97)</dd>
           <dd class="item -info">
@@ -58,15 +58,15 @@
             compre que você não vai se arrepender e se você se arrepender pode
             vender no mercado livre..
           </dd>
-          <dd class="text">
+          <dd class="text -more">
             <a href="#" class="action"> Saber mais...</a>
           </dd>
         </dl>
+        <div class="buttons">
+          <button class="button-store -second">Adiciona no carrinho</button>
+          <a class="button-store -last" href="comprar.html"> Comprar </a>
+        </div>
       </section>
-      <div class="button-container">
-        <button class="button-store -second">Adiciona no carrinho</button>
-        <a class="button-store -last" href="comprar.html"> Comprar </a>
-      </div>
     </div>
   </body>
 </html>
