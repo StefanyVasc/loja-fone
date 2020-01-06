@@ -17,3 +17,10 @@
   display: inline-block;
   margin: 100px 40px 0 -8px;
 }
+
+.heart {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 45px 47px 0 77px;
+}
