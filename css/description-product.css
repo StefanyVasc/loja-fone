@@ -17,10 +17,14 @@
 
 .description-product > .item.-heart {
   position: absolute;
+  transform: scale(1);
   transform: translateX(-100%);
   top: 8px;
   left: -47px;
   cursor: pointer;
+}
+.description-product > .item.-heart:hover {
+  transform: translateX(-100%) scale(0.9);
 }
 
 .description-product > .item.-star {
@@ -30,6 +34,14 @@
 
 .description-product > .item.-star + .item {
   margin-left: 7px;
+}
+
+.description-product .star-img {
+  margin-right: 9px;
+}
+
+.description-product .star-img:hover {
+  transform: scale(0.9);
 }
 
 .description-product > .item.-info {
