@@ -32,6 +32,7 @@
 }
 
 .header-store .action {
+  display: inline-block;
   text-decoration: none;
   color: inherit;
   margin-right: 60px;
@@ -39,4 +40,8 @@
 
 .header-store .action.-last {
   margin-right: 0;
+}
+
+.header-store .action:hover {
+  border-bottom: 1px solid #fff;
 }
