@@ -23,13 +23,20 @@
   left: -47px;
   cursor: pointer;
 }
-.description-product > .item.-heart:hover {
-  transform: translateX(-100%) scale(0.9);
-}
 
 .description-product > .item.-star {
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+.description-product .heart-img {
+  /* Isso é para tirar o bug do hover e animar tanto pra quando estiver 
+  com o mouse e quando tirar o mouse*/
+  transition: transform 200ms linear;
+}
+
+.description-product .heart-img:hover {
+  transform: scale(1.2);
 }
 
 .description-product > .item.-star + .item {
@@ -38,10 +45,11 @@
 
 .description-product .star-img {
   margin-right: 9px;
+  transition: transform 100ms linear;
 }
 
 .description-product .star-img:hover {
-  transform: scale(0.9);
+  transform: scale(1.2);
 }
 
 .description-product > .item.-info {
