@@ -7,19 +7,20 @@
   margin-right: 157px;
 }
 
-@media (max-width: 1325px) {
+@media (max-width: 1324px) {
   .img-product {
     margin-right: 140px;
-    border-radius: 0;
-    text-align: center;
   }
 }
 
-@media (max-width: 1310px) {
+@media (max-width: 1305px) {
+  /* com 1305px o elemento ocupará a linha toda */
   .img-product {
     display: block;
     margin-right: 0;
     margin-bottom: 30px;
+    border-radius: 0;
+    text-align: center;
   }
 }
 
@@ -31,3 +32,4 @@
     width: 100%;
   }
 }
+

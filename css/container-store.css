@@ -1,6 +1,7 @@
 .container-store {
   box-sizing: border-box;
   background-color: #e24647;
+  box-sizing: border-box;
   padding: 55px 60px 165px 0;
   width: 90%;
   max-width: 1330px;
@@ -10,7 +11,8 @@
   transform: translateX(-50%) translateY(-50%);
 }
 
-@media (max-width: 1470px), (max-height: 952px) {
+
+@media (max-width: 1470px), (max-height: 960px) {
   .container-store {
     position: static;
     transform: none;
@@ -19,13 +21,14 @@
   }
 }
 
-@media (max-width: 1310px) {
+
+@media (max-width: 1305px) {
   .container-store {
     padding-right: 0;
   }
 }
 
-@media (max-height: 952px) {
+@media (max-height: 960px) {
   .container-store {
     max-width: 1330px;
     margin-left: auto;
