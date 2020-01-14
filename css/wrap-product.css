@@ -26,17 +26,3 @@
     transform: none;
   }
 }
-
-@media (max-width: 1310px) {
-  .wrap-product {
-    width: 100%;
-  }
-  .wrap-product > .buttons {
-    position: static;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    transform: none;
-  }
-}
