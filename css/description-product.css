@@ -28,6 +28,9 @@
   margin-bottom: 10px;
   cursor: pointer;
 }
+.description-product > .item.-star + .item {
+  margin-left: 7px;
+}
 
 .description-product .heart-img {
   /* Isso é para tirar o bug do hover e animar tanto pra quando estiver 
@@ -37,10 +40,6 @@
 
 .description-product .heart-img:hover {
   transform: scale(0.9);
-}
-
-.description-product > .item.-star + .item {
-  margin-left: 7px;
 }
 
 .description-product .star-img {
@@ -78,4 +77,31 @@
 .description-product .action {
   color: inherit;
   text-decoration: none;
+}
+
+@media (max-width: 1305px) {
+  .description-product {
+    width: 50%;
+    min-width: 700px;
+    display: block;
+    margin: 0 auto 60px;
+  }
+  .description-product > .title {
+    font-size: 35px;
+    text-align: center;
+  }
+  .description-product > .item.-star {
+    float: left;
+    margin-right: 10px;
+  }
+  .description-product > .item.-number {
+    padding-top: 4px;
+  }
+}
+
+@media (max-width: 770px) {
+  .description-product {
+    width: 90%;
+    min-width: auto;
+  }
 }
