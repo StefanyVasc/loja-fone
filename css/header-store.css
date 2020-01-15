@@ -1,8 +1,10 @@
 .header-store {
   color: #fff;
   overflow: hidden;
-  margin-bottom: 138px;
+  margin-bottom: 95px;
   padding-left: 60px;
+  display: inline-block;
+  margin-top: -56px;
 }
 
 .header-store > .title {
@@ -11,12 +13,15 @@
   text-transform: uppercase;
   float: left;
   cursor: pointer;
+  margin-top: 55px;
+  margin-right: 200px;
 }
 
 .header-store > .navigation {
   font-size: 21px;
   font-family: "SegoeUI", "Roboto", sans-serif;
   float: right;
+  margin-top: 56px;
 }
 
 .header-store [type="search"] {
@@ -62,58 +67,68 @@
   transform: scaleX(1);
 }
 
-@media (max-width: 1305px) {
+@media (max-width: 1320px) {
   .header-store {
     padding-right: 60px;
   }
 }
 
-@media (max-width: 1235px) {
+@media (max-width: 1300px) {
+  .header-store {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .header-store > .title {
     float: none;
     text-align: center;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .header-store > .navigation {
     float: none;
     text-align: center;
   }
-}
 
-@media (max-width: 966px) {
-  .header-store {
-    padding-left: 30px;
-    padding-right: 30px;
+  @media (max-width: 1074px) {
+    .header-store {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .header-store .action {
+      margin-right: 80px;
+    }
+    .header-store [type="search"] {
+      display: none;
+    }
   }
-  .header-store [type="search"] {
-    display: none;
-  }
-}
 
-@media (max-width: 479px) {
-  .header-store .action {
-    margin-right: 30px;
+  @media (max-width: 589px) {
+    .header-store .action {
+      margin-right: 30px;
+    }
   }
-}
 
-@media (max-width: 418px) {
-  .header-store .action {
-    margin-right: 15px;
+  @media (max-width: 464px) {
+    .header-store .action {
+      margin-right: 15px;
+    }
   }
-}
 
-@media (max-width: 388px) {
-  .header-store {
-    padding-left: 16px;
-    padding-right: 16px;
+  @media (max-width: 427px) {
+    .header-store {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .header-store .action {
+      margin-right: 8px;
+    }
   }
-  .header-store .action {
-    margin-right: 8px;
-  }
-}
 
-@media (max-width: 346px) {
-  .header-store > .navigation {
-    display: none;
+  @media (max-width: 409px) {
+    .header-store > .navigation {
+      display: none;
+    }
   }
 }
