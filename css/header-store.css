@@ -3,7 +3,7 @@
   overflow: hidden;
   margin-bottom: 95px;
   padding-left: 60px;
-  display: inline-block;
+  /*  display: inline-block; */
   margin-top: -56px;
 }
 
@@ -35,6 +35,10 @@
   width: 358px;
   margin-right: 65px;
   vertical-align: bottom;
+}
+
+.header-store [type="search"]::placeholder {
+  color: inherit;
 }
 
 .header-store .action {
@@ -75,9 +79,10 @@
 
 @media (max-width: 1300px) {
   .header-store {
-    width: 80%;
+    /* width: 80%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
+    margin-bottom: 70px;
   }
   .header-store > .title {
     float: none;
