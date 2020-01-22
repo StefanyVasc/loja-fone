@@ -12,5 +12,10 @@ const $heart = window.document.querySelector(".-heart");
 $heart.addEventListener("click", handleClick);
 
 function handleClick() {
-  console.log("ae");
+  /* if ($heart.classList.contains("-active")) {
+    $heart.classList.remove("-active"); //quando tem a classe active
+  } else {
+    $heart.classList.add("-active"); // quando não tem a classe active
+  } */
+  $heart.classList.toggle("-active");
 }
