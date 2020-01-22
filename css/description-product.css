@@ -28,10 +28,10 @@
   margin-left: 77px;
 }
 
+/*integração com o js*/
 .description-product > .item.-active {
   background-color: #fff;
 }
-
 .description-product > .item.-star {
   margin-bottom: 10px;
   cursor: pointer;
