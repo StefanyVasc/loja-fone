@@ -6,10 +6,11 @@
 5 - No momento que o usuário clicar mostrar um texto na tela
 */
 
-alert("antes do comando que pega o coração!");
-
 const $heart = window.document.querySelector(".-heart");
 
-console.log($heart);
+/* pegando o clique no heart */
+$heart.addEventListener("click", handleClick);
 
-alert("fim do arquivo");
+function handleClick() {
+  console.log("ae");
+}
