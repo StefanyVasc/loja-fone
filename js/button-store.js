@@ -1,5 +1,8 @@
 const $cart = window.document.querySelector(".-second");
 
-/* $cart.addEventListener("click"); */
+$cart.addEventListener("click", handleClick);
 
-console.log($cart);
+function handleClick() {
+  console.log($cart, "foi clicado");
+  alert("Você quer mesmo adicionar ao carrinho");
+}
