@@ -4,10 +4,6 @@ const positionLast = $stars.length - 1;
 
 $heart.addEventListener("click", handleClick);
 
-function handleClick() {
-  this.classList.toggle("-active");
-}
-
 $stars.forEach(function($star, key) {
   if (key == 0) {
     $star.addEventListener("click", firstStar);
@@ -23,6 +19,10 @@ $stars.forEach(function($star, key) {
     });
   }
 });
+
+function handleClick() {
+  this.classList.toggle("-active");
+}
 
 function firstStar() {
   $stars.forEach(function($star) {

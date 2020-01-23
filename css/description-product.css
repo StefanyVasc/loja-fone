@@ -44,22 +44,18 @@
   display: none;
 }
 
-/*challenge 014 basic*/
 .description-product > .item.-active .icon.-active {
   display: block;
 }
-/* consertando o bug e deixando na mesma linha */
+
 .description-product .star {
   display: inline-block;
 }
 
-/* quando não estiver ativo esconde a estrela preenchida */
 .description-product .star.-active > .icon {
   display: none;
 }
 
-/* quando estiver ativo esconde a estrela vazia */
-/* mexendo com a estrela, se o star estiver ativo, quero pegar o filho direto que estiver ativo */
 .description-product .star.-active > .-active {
   display: block;
 }
@@ -109,11 +105,6 @@
     text-align: center;
   }
 
-  .description-product > .item.-heart {
-    left: auto;
-    transform: none;
-  }
-
   .description-product > .item.-star {
     float: left;
     margin-right: 10px;
@@ -127,11 +118,5 @@
   .description-product {
     width: 90%;
     min-width: auto;
-  }
-}
-
-@media (max-width: 475px) {
-  .description-product > .item.-heart {
-    position: static;
   }
 }
