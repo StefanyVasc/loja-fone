@@ -23,7 +23,17 @@ function handleClick() {
 }
 
 function starClick() {
-  const $oneStar = document.querySelectorAll(".star-img");
-  console.log($oneStar);
-  $oneStar.classList.toggle("-click");
+  /* var $oneStar = document.querySelectorAll(".star-img"); */
+  /* console.log($oneStar); */
+  /* for (var index = 0; index < $star.childNodes.length; index++) {
+    console.log($star.childNodes[index]); */
+  /* console.log($oneStar[index]); 
+  }*/
+  for (var index = 0; index < $star.children.length; index++)
+    if ($star.children[index].className == "star-img") {
+      /* const $starItem = document.getElementsByClassName(".star-img"); */
+      $star.classList.toggle("-click");
+    }
+
+  /* console.log($star); */
 }
