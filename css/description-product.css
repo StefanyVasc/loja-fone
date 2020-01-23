@@ -1,10 +1,6 @@
 .description-product {
-  color: #fff;
   font-family: "Roboto", sans-serif;
-  display: inline-block;
-  width: 554px;
-  margin-left: 80px;
-  margin-top: 0;
+  color: #fff;
 }
 
 .description-product > .title {
@@ -15,57 +11,57 @@
 .description-product > .item {
   font-size: 20px;
   margin-bottom: 28px;
-  margin-left: 0;
 }
 
 .description-product > .item.-heart {
   position: absolute;
-  transform: scale(1);
   transform: translateX(-100%);
-  width: 33px;
-  height: 29px;
   top: 8px;
   left: -47px;
   cursor: pointer;
-  margin-left: 77px;
-}
-
-/*integração com o js*/
-.description-product > .item.-heart.-active {
-  background: url(../img/heart-active.png);
   width: 33px;
   height: 29px;
 }
+
 .description-product > .item.-star {
   margin-bottom: 10px;
   cursor: pointer;
-  margin-left: 0;
 }
 
-.description-product > .item.star-img.-click {
-  background: red;
+.description-product .icon {
+  transition: transform 50ms linear;
 }
+
+.description-product .icon:hover {
+  transform: scale(1.1);
+}
+
+.description-product .item .icon.-active {
+  display: none;
+}
+
+.description-product > .item.-active .icon {
+  display: none;
+}
+
+.description-product > .item.-active .icon.-active {
+  display: block;
+}
+
+.description-product .star {
+  display: inline-block;
+}
+
+.description-product .star.-active > .icon {
+  display: none;
+}
+
+.description-product .star.-active > .-active {
+  display: block;
+}
+
 .description-product > .item.-star + .item {
   margin-left: 7px;
-}
-
-.description-product .heart-img {
-  /* Isso é para tirar o bug do hover e animar tanto pra quando estiver 
-  com o mouse e quando tirar o mouse*/
-  transition: transform 200ms linear;
-}
-
-.description-product .heart-img:hover {
-  transform: scale(0.9);
-}
-
-.description-product .star-img {
-  margin-right: 9px;
-  transition: transform 100ms linear;
-}
-
-.description-product .star-img:hover {
-  transform: scale(0.9);
 }
 
 .description-product > .item.-info {
@@ -86,8 +82,8 @@
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 30px;
-  margin-left: 0;
 }
+
 .description-product > .text.-more {
   margin-bottom: 0;
 }
@@ -97,17 +93,23 @@
   text-decoration: none;
 }
 
-@media (max-width: 1325px) {
+@media (max-width: 1310px) {
   .description-product {
     width: 50%;
-    min-width: 700px;
-    display: block;
+    min-width: 655px;
     margin: 0 auto 60px;
   }
+
   .description-product > .title {
     font-size: 35px;
     text-align: center;
   }
+
+  .description-product > .item.-heart {
+    left: auto;
+    transform: none;
+  }
+
   .description-product > .item.-star {
     float: left;
     margin-right: 10px;
@@ -115,14 +117,17 @@
   .description-product > .item.-number {
     padding-top: 4px;
   }
-  .description-product > .item.-heart {
-    left: 850px;
-  }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 720px) {
   .description-product {
     width: 90%;
     min-width: auto;
+  }
+}
+
+@media (max-width: 475px) {
+  .description-product > .item.-heart {
+    position: static;
   }
 }
