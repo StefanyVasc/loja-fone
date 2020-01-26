@@ -1,5 +1,6 @@
 const $heart = document.querySelector(".-heart");
 const $stars = document.querySelectorAll(".star");
+/* pegando a ultima posição = tamanho do array -1 */
 const positionLast = $stars.length - 1;
 
 $heart.addEventListener("click", handleClick);
@@ -7,20 +8,6 @@ $heart.addEventListener("click", handleClick);
 function handleClick() {
   this.classList.toggle("-active");
 }
-
-$stars.forEach(function($star, key) {
-  if (key == 0) {
-    $star.addEventListener("click", firstStar);
-  }
-  if (key == positionLast) {
-    $star.addEventListener("click", lastStar);
-  }
-  if (key > 0 && key < positionLast) {
-    $star.addEventListener("click", function() {
-      middleStar(key);
-    });
-  }
-});
 
 function firstStar() {
   $stars.forEach(function($star) {
@@ -41,3 +28,21 @@ function middleStar(index) {
     }
   });
 }
+
+$stars.forEach(function($star, key) {
+  if (key == 0) {
+    /* primera posição */
+
+    $star.addEventListener("click", firstStar);
+  }
+  if (key > 0 && key < positionLast) {
+    /* posições do meio */
+    $star.addEventListener("click", function() {
+      middleStar(key);
+    });
+  }
+  if (key == positionLast) {
+    /* última posição */
+    $star.addEventListener("click", lastStar);
+  }
+});
