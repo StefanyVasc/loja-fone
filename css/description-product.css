@@ -93,11 +93,6 @@
   text-decoration: none;
 }
 
-/* @media (max-widht: 1304px) {
-  .description-product > .item.-heart {
-    
-} */
-
 @media (max-width: 1310px) {
   .description-product {
     width: 50%;
