@@ -5,7 +5,7 @@
   padding-left: 60px;
 }
 
-.header-store > .icon-search {
+/* .header-store > .icon-search {
   position: relative;
   top: 0;
   height: 41px;
@@ -27,7 +27,7 @@
 }
 .header-store > .icon-search.-active {
   opacity: 0;
-}
+} */
 
 .header-store > .title {
   font-size: 40px;
@@ -59,6 +59,10 @@
 
 .header-store [type="search"]::placeholder {
   color: inherit;
+}
+.header-store .search-icon {
+  display: none;
+  height: 40px;
 }
 
 .header-store .action {
@@ -120,7 +124,49 @@
     padding-left: 30px;
     padding-right: 30px;
   }
-  /* .header-store [type="search"] {
+  .header-store [type="search"] {
+    position: absolute;
+    /* background: url(../img/search.png) no-repeat center right;
+    background-size: contain;
+    outline: none; */
+    top: 0;
+    left: 0;
+    transform: translateX(-88%);
+    background-color: #fff;
+    color: #000;
+    transition: transform 300ms linear;
+  }
+
+  .header-store .-active[type="search"] {
+    /* background-image: url(../img/search-disabled.png); */
+    transition: transform 300ms cubic-bezier(0, 0, 0.96, 1.26);
+    transform: translateX(0);
+  }
+
+  .header-store .search-icon {
+    opacity: 1;
+    background-color: #fff;
+    background-image: url("/img/search.png");
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    position: absolute;
+    display: inline-block;
+    width: 45px;
+    top: 0;
+    left: 0;
+  }
+  .header-store .search-icon.-active {
+    opacity: 0;
+  }
+
+  /* .header-store .-on.-active {
+    background-image: url(../img/search-disabled.png);
+    transition: transform 300ms cubic-bezier(0, 0, 0.96, 1.26);
+    transform: translateX(0);
+  }
+  .header-store .-close.-active {
+    opacity: 1;
     position: absolute;
     background: url(../img/search.png) no-repeat center right;
     background-size: contain;
@@ -131,33 +177,7 @@
     background-color: #fff;
     color: #000;
     transition: transform 300ms linear;
-  }
-
-  .header-store .-active[type="search"] {
-    background-image: url(../img/search-disabled.png);
-    transition: transform 300ms cubic-bezier(0, 0, 0.96, 1.26);
-    transform: translateX(0);
   } */
-  .header-store .-on.-active {
-    /* 
-     */
-    background-image: url(../img/search-disabled.png);
-    transition: transform 300ms cubic-bezier(0, 0, 0.96, 1.26);
-    transform: translateX(0);
-  }
-  .header-store .-close.-active {
-    opacity: 1;
-    /*  position: absolute;
-    background: url(../img/search.png) no-repeat center right;
-    background-size: contain;
-    outline: none;
-    top: 0;
-    left: 0; */
-    transform: translateX(-88%);
-    background-color: #fff;
-    color: #000;
-    transition: transform 300ms linear;
-  }
 
   @media (max-width: 530px) {
     .header-store .action {
