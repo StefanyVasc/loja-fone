@@ -1,11 +1,23 @@
 .photo-product {
+  box-sizing: border-box;
   background-color: #fff;
   display: inline-block;
   height: 554px;
+  width: 547px;
   vertical-align: middle;
   border-top-right-radius: 150px;
   border-bottom-right-radius: 150px;
   margin-right: 157px;
+  padding-left: 50px;
+}
+
+.shape {
+  background-color: #fff;
+  width: 547px;
+  height: 554px;
+  position: absolute;
+  left: 0;
+  z-index: -1;
 }
 
 @media (max-width: 1325px) {
@@ -20,7 +32,10 @@
     display: block;
     margin-right: 0;
     border-radius: 0;
+    text-align: center;
     margin-bottom: 30px;
+    padding-left: 0;
+    width: 100%;
   }
 }
 
