@@ -19,6 +19,7 @@
   float: right;
 }
 
+/* tirando o bug da busca alinha acima dos items do header */
 .header-store .list {
   display: inline;
 }
