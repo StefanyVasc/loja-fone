@@ -1,6 +1,6 @@
 # loja-fone
 
-Landing page d uma loja de fones.
+Landing page de uma loja de fones, projeto feito durante o curso do front ao end.
 
 - CSS
 - HTML
